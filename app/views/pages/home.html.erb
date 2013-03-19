@@ -1,11 +1,54 @@
-<div class="hero-unit">
-<h1>
-	Welcome to my Sample <%= link_to "Rails", "http://rubyonrails.org/"%> App!
-</h1>
-<p>
-	You've found the home page for the application.
-</p>
-<p>
-	<%= link_to "Sign Up Now!", "#", class: "btn btn-primary btn-large" %>
-</p>
-</div>
+<div id="myCarousel" class="carousel slide">
+     <div class="carousel-inner">
+       <div class="item active">
+         <%=image_tag("slide-01.jpg", alt: "Example Image")%>
+         <div class="container">
+           <div class="carousel-caption">
+             <h1>
+				Welcome to my Sample <%= link_to "Rails", "http://rubyonrails.org/"%> App!
+			</h1>
+			<p>
+				You've found the home page for the application.
+			</p>
+			<p>
+				<%= link_to "<i class=\"icon-pencil icon-white\"></i> Sign Up Now!".html_safe, "#", class: "btn btn-primary btn-large" %>
+			</p>
+           </div>
+         </div>
+       </div>
+       <div class="item">
+	   <%=image_tag("slide-02.jpg", alt: "Example Image")%>
+         <div class="container">
+           <div class="carousel-caption">
+             <h1>
+				Welcome to my Sample <%= link_to "Rails", "http://rubyonrails.org/"%> App!
+			</h1>
+			<p>
+				You've found the home page for the application.
+			</p>
+			<p>
+				<%= link_to "<i class=\"icon-pencil icon-white\"></i> Sign Up Now!".html_safe, "#", class: "btn btn-primary btn-large" %>
+			</p>
+           </div>
+         </div>
+       </div>
+       <div class="item">
+         <%=image_tag("slide-03.jpg", alt: "Example Image")%>
+         <div class="container">
+           <div class="carousel-caption">
+             <h1>
+				Welcome to my Sample <%= link_to "Rails", "http://rubyonrails.org/"%> App!
+			</h1>
+			<p>
+				You've found the home page for the application.
+			</p>
+			<p>
+				<%= link_to "<i class=\"icon-pencil icon-white\"></i> Sign Up Now!".html_safe, "#", class: "btn btn-primary btn-large" %>
+			</p>
+           </div>
+         </div>
+       </div>
+     </div>
+     <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+     <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+   </div><!-- /.carousel -->

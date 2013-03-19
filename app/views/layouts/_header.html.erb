@@ -10,16 +10,18 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="#">SampleApp</a>
+      <%= link_to "SampleApp", root_path, :class => "brand" -%>
  
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
 	<ul class="nav">
-		<li><%= link_to "Home", root_path %></li>
-		<li><%= link_to "About", about_path %></li>
+		<li><%= link_to "<i class=\"icon-home\"></i> Home".html_safe, root_path -%></li>
+		<li><%= link_to "<i class=\"icon-info-sign\"></i> About".html_safe, about_path %></li>
+		<li><%= link_to "<i class=\"icon-bullhorn\"></i> Contact".html_safe, "#" %></li>
+		
 		</ul>
 		<ul class="nav pull-right">
-			<li><%= link_to "Login", "#" %></li>
+	          <%= render 'layouts/signin' %>
 			</ul>
         <!-- .nav, .navbar-search, .navbar-form, etc -->
       </div>
