@@ -1,31 +1,35 @@
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
+<div class="navbar navbar-fixed-top">  
+  <div class="navbar-inner">  
     <div class="container">
- 
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
- 
-      <!-- Be sure to leave the brand out there if you want it shown -->
-      <%= link_to "SampleApp", root_path, :class => "brand" -%>
- 
-      <!-- Everything you want hidden at 940px or less, place within here -->
-      <div class="nav-collapse collapse">
-	<ul class="nav">
-		<li><%= link_to "<i class=\"icon-home\"></i> Home".html_safe, root_path -%></li>
-		<li><%= link_to "<i class=\"icon-info-sign\"></i> About".html_safe, about_path %></li>
-		<li><%= link_to "<i class=\"icon-bullhorn\"></i> Contact".html_safe, "#" %></li>
-		
-		</ul>
-		<ul class="nav pull-right">
-	          <%= render 'layouts/signin' %>
-			</ul>
-        <!-- .nav, .navbar-search, .navbar-form, etc -->
-      </div>
- 
+	
+		<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+		 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		 </a>
+	     <%= link_to "Sample<span>App</span>".html_safe, root_path, :class => "brand" -%> 
+	     <div class="nav-collapse collapse">
+
+           <ul class="nav"></ul>  
+
+<ul class="nav pull-right">  
+  <li>  
+    <%= link_to "<span>Sign up</span>".html_safe, "#" -%>
+  </li>  
+  <li class="dropdown">  
+    <a href="#"  
+          class="dropdown-toggle"  
+          data-toggle="dropdown">  
+          Sign in  
+          <b class="caret"></b>  
+    </a>  
+    <ul class="dropdown-menu"></ul>  
+    <%= render 'layouts/signin' %>
+  </li>
+</ul>  
     </div>
-  </div>
+
+</div>  
+  </div>  
 </div>

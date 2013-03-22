@@ -1,21 +1,38 @@
-/*$baseFontFamily: Oxygen;*/
-/* @import url(http://fonts.googleapis.com/css?family=Oxygen); */
-
-$btnPrimaryBackground: green;
-$navbarBackgroundHighlight: white;
-$navbarBackground: white;
+$navbarBackgroundHighlight: #2B2B3B;
+$navbarBackground: #2B2B3B;
+$btnPrimaryBackground: #FF5F55;
+$btnPrimaryBackgroundHighlight: #FF5F55;
+$navbarText: #FFFAC8;
+$navbarLinkColor: #FFFAC8;
+$navbarLinkColorHover: #FFFAC8;
+$navbarLinkColorActive: #FFFAC8;
+$navbarHeight: 50px;
+$dropdownBackground: #2B2B3B;
 
 @import 'bootstrap';
+body{
+    padding-top: 60px;
+}
+
 @import 'bootstrap-responsive';
 
-body { padding-top: 60px; }
-
-.navbar-inner { @include box-shadow(none !important);
-				border: 0;
+.navbar-inner{
+    @include box-shadow(none !important);
+    border: 0;
+	color: #FFFAC8;
+	font-size: 20px;
+	span{
+	    color:#FF5F55;
+	}
 }
 
 .footer {
+	padding-top: 10px;
 	margin-top: 50px;
-	color: $grayLight;
-	a {	color: $gray; }
+	color:#FFFAC8;
+	background-color: #2B2B3B;
+	background-image: none;
+	background-repeat: no-repeat;
+	filter: none;
+	a {	color: $black; }
 }
