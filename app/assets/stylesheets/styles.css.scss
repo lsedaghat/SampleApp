@@ -36,3 +36,12 @@ body{
 	filter: none;
 	a {	color: $black; }
 }
+
+input[type="checkbox"] {
+    vertical-align: top;
+}
+
+input[type="checkbox"] + label {
+    display:inline;
+    vertical-align: top;
+}
