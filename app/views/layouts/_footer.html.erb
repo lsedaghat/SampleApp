@@ -1,10 +1,22 @@
-      <div class="footer">
+      <div class="navbar navbar-fixed-bottom">
         <div class="container-fluid">
           	<div class="row-fluid">
-			  <div class="span3">Pages</div>
-			  <div class="span3">Support Us</div>
-			  <div class="span3">More</div>
-			  <div class="span3">More</div>
-			</div>
+				  <ul class="nav pull-left"> 	<%= link_to 'http://www.twitter.com' do %>
+					  <%= image_tag("twitter.png") %> Twitter
+					<% end %> |
+					<%= link_to 'http://www.facebook.com' do %>
+						  <%= image_tag("facebook.png") %> Facebook
+						<% end %> |
+						<%= link_to '#' do %>
+							  <%= image_tag("stumbleupon.png") %> StumbleUpon
+							<% end %> |
+							<%= link_to '#' do %>
+								  <%= image_tag("googleplus.png") %> Google+
+								<% end %>	
+				</ul>
+			  <ul class="nav pull-right"> <%= link_to "About", "#" -%> | 
+				<%= link_to "Contact", "#" -%> | 
+				<%= link_to "Legal", "#" -%></center>
+			</ul>
         </div>
       </div>

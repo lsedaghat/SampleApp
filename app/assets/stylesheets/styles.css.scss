@@ -1,17 +1,19 @@
-$navbarBackgroundHighlight: #2B2B3B;
-$navbarBackground: #2B2B3B;
-$btnPrimaryBackground: #FF5F55;
-$btnPrimaryBackgroundHighlight: #FF5F55;
-$navbarText: #FFFAC8;
-$navbarLinkColor: #FFFAC8;
-$navbarLinkColorHover: #FFFAC8;
-$navbarLinkColorActive: #FFFAC8;
-$navbarHeight: 50px;
-$dropdownBackground: #2B2B3B;
+$navbarBackgroundHighlight: #003445;
+$navbarBackground: #003445;
+$btnPrimaryBackground: #00212c;
+$btnPrimaryBackgroundHighlight: #00212c;
+$navbarText: #FFFFFF;
+$navbarLinkColor: #FFFFFF;
+$navbarLinkColorHover: #FFFFFF;
+$navbarLinkColorActive: #FFFFFF;
+$navbarHeight: 40px;
+$dropdownBackground: #003445;
 
 @import 'bootstrap';
 body{
-    padding-top: 60px;
+    padding-top: 120px;
+    background-image:image-url("beige_linen.jpg");
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
 @import 'bootstrap-responsive';
@@ -19,22 +21,39 @@ body{
 .navbar-inner{
     @include box-shadow(none !important);
     border: 0;
-	color: #FFFAC8;
-	font-size: 20px;
+	color: #FFFFFF;
+	font-size: 18px;
 	span{
-	    color:#FF5F55;
+	    color:#f2e0e0;
 	}
 }
 
-.footer {
+.navbar .nav > li > a {
+  line-height: 60px;
+}
+
+.dropdown {
+	span {
+		font-size: 10px;
+		vertical-align: top;
+	}
+}
+
+.dropdown-menu {
+	border:2px dotted #00212c;
+}
+
+.navbar.navbar-fixed-bottom {
 	padding-top: 10px;
+	padding-bottom: 10px;
 	margin-top: 50px;
-	color:#FFFAC8;
-	background-color: #2B2B3B;
-	background-image: none;
-	background-repeat: no-repeat;
-	filter: none;
-	a {	color: $black; }
+	color:#FFFFFF;
+	background-color: #003445;
+	font-size: 12px;
+	a {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
 }
 
 input[type="checkbox"] {
